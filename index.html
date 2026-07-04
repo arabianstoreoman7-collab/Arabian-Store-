@@ -48,9 +48,10 @@
       white-space:pre-line;
     }
 
-   <span class="phone" style="color:#ff2d2d !important; text-shadow:0 0 6px red;">
-917 91 917
-</span>
+    /* شماره تلفن (حتی اگر override شود باز قرمز می‌ماند) */
+    .phone{
+      color:#ff0000 !important;
+      font-weight:bold;
     }
 
     .btn{
@@ -61,6 +62,11 @@
       text-decoration:none;
       color:white;
       font-weight:bold;
+      transition:0.2s;
+    }
+
+    .btn:hover{
+      transform:scale(1.03);
     }
 
     .wa{background:#22c55e;}
@@ -79,14 +85,21 @@ IT Solutions, CCTV, Advanced Electronics & AI Systems
 تكنولوجيا المعلومات، كاميرات المراقبة، الإلكترونيات المتقدمة، والذكاء الاصطناعي
 
 Address: Makani Mall, Maabilah, Muscat, Oman
-Tel: <span class="phone">917 91 917</span>
+Tel: <span class="phone" style="color:#ff2d2d !important; text-shadow:0 0 6px red;">
+917 91 917
+</span>
 Email: Arabianstore.oman7@gmail.com
 
 Please choose an option:
     </div>
 
-    <a class="btn wa" href="https://wa.me/96891791917?src=qr" target="_blank">WhatsApp</a>
-    <a class="btn map" href="https://maps.app.goo.gl/ayt5G22mzKddV6TL9?g_st=com.openai.chat.Share" target="_blank">Location</a>
+    <a class="btn wa" href="https://wa.me/96891791917?src=qr" target="_blank">
+      WhatsApp
+    </a>
+
+    <a class="btn map" href="https://maps.app.goo.gl/ayt5G22mzKddV6TL9?g_st=com.openai.chat.Share" target="_blank">
+      Location
+    </a>
 
   </div>
 </body>
